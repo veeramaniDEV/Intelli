@@ -14,9 +14,4 @@ export const appRoutes: Routes = [
             { path: 'dashboard', component: DashboardComponent }
           ]
         }
-    // {
-    //     path: '',
-    //     component: AppLayout,
-       
-    // }
 ];
