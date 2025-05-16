@@ -1,11 +1,10 @@
-<div class="flex items-center justify-center min-h-screen bg-surface-50 dark:bg-surface-900">
+<div class="flex items-center justify-center min-h-screen bg-gradient">
   <div class="bg-surface-0 dark:bg-surface-800 p-8 rounded-lg shadow-lg w-full max-w-md p-6">
     <h2 class="text-2xl font-bold mb-6 text-center text-surface-950 dark:text-surface-0">Login</h2>
 
     <div *ngIf="errorMessage" class="text-red-500 mb-4 text-center">
       {{ errorMessage }}
     </div>
-
     <div class="mb-4">
       <span class="p-float-label">
         <label for="username">Username</label>
@@ -20,7 +19,8 @@
       </span>
     </div>
 
-    <button pButton type="button" (click)="login()" label="Login" class="w-full"></button>
+    <p-button label="Login" (click)="login()" [styleClass]="'w-full'" severity="primary" />
+
   </div>
 
 </div>

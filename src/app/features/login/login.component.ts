@@ -22,7 +22,6 @@ import { PasswordModule } from 'primeng/password';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  
   username = '';
   password = '';
   errorMessage = '';
