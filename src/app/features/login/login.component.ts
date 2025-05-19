@@ -12,10 +12,10 @@ import { PasswordModule } from 'primeng/password';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule, InputTextModule, ButtonModule,CommonModule,  
-    FloatLabelModule,  
+  imports: [FormsModule, InputTextModule, ButtonModule, CommonModule,
+    FloatLabelModule,
     ReactiveFormsModule,
-     CheckboxModule,
+    CheckboxModule,
     ToastModule,
     PasswordModule],
   templateUrl: './login.component.html',
