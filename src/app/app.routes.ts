@@ -5,13 +5,13 @@ import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { LoginComponent } from './features/login/login.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: LoginComponent },
-        {
-          path: '',
-          component: AppLayout,
-          canActivate: [authGuard],
-          children: [
-            { path: 'dashboard', component: DashboardComponent }
-          ]
-        }
+  { path: '', component: LoginComponent },
+  {
+    path: '',
+    component: AppLayout,
+    canActivate: [authGuard],
+    children: [
+      { path: 'dashboard', component: DashboardComponent }
+    ]
+  }
 ];
