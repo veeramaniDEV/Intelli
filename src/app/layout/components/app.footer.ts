@@ -1,4 +1,4 @@
-import {Component, computed, inject} from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { LayoutService } from '../service/layout.service';
 
 @Component({
@@ -6,11 +6,11 @@ import { LayoutService } from '../service/layout.service';
     standalone: true,
     template: `
         <div class="layout-footer">
+            <span class="footer-copyright">Copyright © 2023. Work Comp Now. All rights reserved.</span>
             <div class="footer-logo-container">
-                <img src="/layout/images/logo-{{ isDarkTheme() ? 'white' : 'dark' }}.svg" alt="diamond-layout"/>
-                <span class="footer-app-name">DIAMOND</span>
+                <!-- <img src="assets/images/cognet_logo.png" /> -->
+                <span class="footer-app-name">CogNet</span>
             </div>
-            <span class="footer-copyright">&#169; Your Organization - 2025</span>
         </div>
     `
 })
