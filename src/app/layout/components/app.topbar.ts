@@ -41,8 +41,14 @@ interface NotificationsBars {
                         <i class="pi pi-search"></i>
                     </a>
                 </li>
-                <li class="right-sidebar-item">
+                <!-- <li class="right-sidebar-item">
                     <button class="app-config-button" (click)="onConfigButtonClick()"><i class="pi pi-cog"></i></button>
+                </li> -->
+                 <li class="right-sidebar-item">  
+                   <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                        <span class="w-2 h-2 rounded-full bg-red-500 absolute top-2 right-2.5"></span>
+                         <i class="pi pi-clock"></i>
+                    </a>
                 </li>
                 <li class="right-sidebar-item static sm:relative">
                     <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
@@ -95,7 +101,7 @@ interface NotificationsBars {
                 </li>     
                  <li class="right-sidebar-item">  
                     <a tabindex="0" class="right-sidebar-button" [routerLink]="['/']">
-                       <i class="pi pi-sign-out " style="color: var(--primary-color)"></i>
+                       <i class="pi pi-sign-out" style="color: var(--primary-color)"></i>
                     </a>
                 </li>
             </ul>

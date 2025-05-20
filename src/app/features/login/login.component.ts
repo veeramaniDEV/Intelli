@@ -28,7 +28,7 @@ export class LoginComponent {
   constructor(private auth: AuthService, private router: Router) { }
   login() {
     if (this.auth.login(this.username, this.password)) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/submissions']);
     } else {
       this.errorMessage = 'Invalid credentials';
     }
