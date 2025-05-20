@@ -1,0 +1,18 @@
+<div class="flex justify-between">
+    <div class="font-semibold text-xl mb-4">Prospect Name</div>
+    <div class="flex gap-2">
+        <p-button label="Back"></p-button>
+        <p-button label="Next"></p-button>
+        <p-button label="Save"></p-button>
+        <p-button label="Cancel"></p-button>
+    </div>
+</div>
+<div class="card">
+    <p-stepper [value]="1">
+        <p-step-list>
+            <p-step [value]="1">Header I</p-step>
+            <p-step [value]="2">Header II</p-step>
+            <p-step [value]="3">Header III</p-step>
+        </p-step-list>
+    </p-stepper>
+</div>
