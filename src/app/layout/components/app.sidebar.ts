@@ -1,19 +1,18 @@
-import {Component, computed, ElementRef, ViewChild} from '@angular/core';
-import {AppMenu} from './app.menu';
-import {RouterModule} from '@angular/router';
-import {CommonModule} from "@angular/common";
+import { Component, computed, ElementRef, ViewChild } from '@angular/core';
+import { AppMenu } from './app.menu';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from "@angular/common";
 import { LayoutService } from '../service/layout.service';
 import { AppTopbar } from './app.topbar';
 
 @Component({
     selector: '[app-sidebar]',
     standalone: true,
-    imports: [CommonModule,AppMenu, RouterModule, AppTopbar],
+    imports: [CommonModule, AppMenu, RouterModule, AppTopbar],
     template: `<div class="layout-sidebar" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
         <div class="sidebar-header">
             <a class="logo" [routerLink]="['/']">
-                <img class="logo-image" [src]="menuTheme() === 'light' ? '/layout/images/logo-dark.svg' : '/layout/images/logo-white.svg'" alt="diamond-layout" />
-                <span class="app-name title-h7">DIAMOND</span>
+                 <img src="assets/images/logo-intelli.png" class="w-56 bg-white rounded-lg"/>
             </a>
             <button class="layout-sidebar-anchor z-2" type="button" (click)="anchor()"></button>
         </div>
@@ -36,7 +35,7 @@ export class AppSidebar {
     constructor(
         public layoutService: LayoutService,
         public el: ElementRef
-    ) {}
+    ) { }
 
     onMouseEnter() {
         if (!this.layoutService.layoutState().anchored) {

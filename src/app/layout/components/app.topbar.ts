@@ -92,53 +92,10 @@ interface NotificationsBars {
                             }
                         </ul>
                     </div>
-                </li>
-                <li class="profile-item static sm:relative">
-                    <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
-                        <p-avatar styleClass="!w-10 !h-10">
-                            <img src="/layout/images/profile.jpg" />
-                        </p-avatar>
-                    </a>
-                    <div
-                        class="list-none p-2 m-0 rounded-2xl border border-surface overflow-hidden absolute bg-surface-0 dark:bg-surface-900 hidden origin-top w-52 mt-2 right-0 z-[999] top-auto shadow-[0px_56px_16px_0px_rgba(0,0,0,0.00),0px_36px_14px_0px_rgba(0,0,0,0.01),0px_20px_12px_0px_rgba(0,0,0,0.02),0px_9px_9px_0px_rgba(0,0,0,0.03),0px_2px_5px_0px_rgba(0,0,0,0.04)]"
-                    >
-                        <ul class="flex flex-col gap-1">
-                            <li>
-                                <a class="label-small dark:text-surface-400 flex gap-2 py-2 px-2.5 rounded-lg items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
-                                    <i class="pi pi-user"></i>
-                                    <span>Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="label-small dark:text-surface-400 flex gap-2 py-2 px-2.5 rounded-lg items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
-                                    <i class="pi pi-cog"></i>
-                                    <span>Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="label-small dark:text-surface-400 flex gap-2 py-2 px-2.5 rounded-lg items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
-                                    <i class="pi pi-calendar"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="label-small dark:text-surface-400 flex gap-2 py-2 px-2.5 rounded-lg items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
-                                    <i class="pi pi-inbox"></i>
-                                    <span>Inbox</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="label-small dark:text-surface-400 flex gap-2 py-2 px-2.5 rounded-lg items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
-                                    <i class="pi pi-power-off"></i>
-                                    <span>Log out</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="right-sidebar-item">
-                    <a tabindex="0" class="right-sidebar-button" (click)="showRightMenu()">
-                        <i class="pi pi-align-right"></i>
+                </li>     
+                 <li class="right-sidebar-item">  
+                    <a tabindex="0" class="right-sidebar-button" [routerLink]="['/']">
+                       <i class="pi pi-sign-out " style="color: var(--primary-color)"></i>
                     </a>
                 </li>
             </ul>
