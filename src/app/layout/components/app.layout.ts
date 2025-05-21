@@ -23,8 +23,10 @@ import { AppSidebar } from './app.sidebar';
                  <div app-sidebar></div>
                 <div class="layout-content">
                     <div app-breadcrumb></div>
+                    <div class="content_height">
                     <router-outlet></router-outlet>
-                    <!-- <div app-footer></div> -->
+                    </div>
+                    <div app-footer></div>
                 </div>
             </div>
         </div>

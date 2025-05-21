@@ -50,58 +50,16 @@ interface NotificationsBars {
                 </li> -->
                  <li class="right-sidebar-item">  
                    <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
-                        <span class="w-3 h-3 rounded-full  absolute top-1.5 right-2 " style="background-color:#8b0000;"></span>
+                        <span class="w-3 h-3 rounded-full border-2 border-white absolute top-1.5 right-2 " style="background-color:#24c644;"></span>
                          <i class="pi pi-clock text-white"></i>
                     </a>
                 </li>
                 <li class="right-sidebar-item static sm:relative">
                     <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
-                        <span class="w-3 h-3 rounded-full  absolute top-1.5 right-2" style="background-color:#8b0000;"></span>
+                        <span class="w-3 h-3 rounded-full border-2 border-white absolute top-1.5 right-2" style="background-color:#24c644;"></span>
                         <i class="pi pi-bell text-white"></i>
                     </a>
-                    <div
-                        class="list-none m-0 rounded-2xl border border-surface absolute bg-surface-0 dark:bg-surface-900 overflow-hidden hidden origin-top min-w-72 sm:w-[22rem] mt-2 z-50 top-auto shadow-[0px_56px_16px_0px_rgba(0,0,0,0.00),0px_36px_14px_0px_rgba(0,0,0,0.01),0px_20px_12px_0px_rgba(0,0,0,0.02),0px_9px_9px_0px_rgba(0,0,0,0.03),0px_2px_5px_0px_rgba(0,0,0,0.04)]"
-                        style="right: -100px"
-                    >
-                        <div class="p-4 flex items-center justify-between border-b border-surface">
-                            <span class="label-small text-surface-950 dark:text-surface-0">Notifications</span>
-                            <button pRipple class="py-1 px-2 text-surface-950 dark:text-surface-0 label-x-small hover:bg-emphasis border border-surface rounded-lg shadow-[0px_1px_2px_0px_rgba(18,18,23,0.05)] transition-all">Mark all as read</button>
-                        </div>
-                        <div class="flex items-center border-b border-surface">
-                            @for (item of notificationsBars(); track item.id; let i = $index) {
-                                <button
-                                    [ngClass]="{ 'border-surface-950 dark:border-surface-0': selectedNotificationBar() === item.id, 'border-transparent': selectedNotificationBar() !== item.id }"
-                                    class="px-3.5 py-2 inline-flex items-center border-b gap-2"
-                                    (click)="selectedNotificationBar.set(item.id)"
-                                >
-                                    <span [ngClass]="{ 'text-surface-950 dark:text-surface-0': selectedNotificationBar() === item.id }" class="label-small">{{ item.label }}</span>
-                                    <p-badge *ngIf="item?.badge" [value]="item.badge" severity="success" size="small" class="!rounded-md" />
-                                </button>
-                            }
-                        </div>
-                        <ul class="flex flex-col divide-y divide-[var(--surface-border)] max-h-80 overflow-auto">
-                            @for (item of selectedNotificationsBarData(); track item.name; let i = $index) {
-                                <li>
-                                    <div class="flex items-center gap-3 px-6 py-3.5 cursor-pointer hover:bg-emphasis transition-all">
-                                        <p-overlay-badge value="" severity="danger" class="inline-flex">
-                                            <p-avatar size="large">
-                                                <img [src]="item.image" class="rounded-lg" />
-                                            </p-avatar>
-                                        </p-overlay-badge>
-                                        <div class="flex items-center gap-3">
-                                            <div class="flex flex-col">
-                                                <span class="label-small text-left text-surface-950 dark:text-surface-0">{{ item.name }}</span>
-                                                <span class="label-xsmall text-left line-clamp-1">{{ item.description }}</span>
-                                                <span class="label-xsmall text-left">{{ item.time }}</span>
-                                            </div>
-                                            <p-badge *ngIf="item.new" value="" severity="success" />
-                                        </div>
-                                    </div>
-                                    <span *ngIf="i !== notifications().length - 1"></span>
-                                </li>
-                            }
-                        </ul>
-                    </div>
+                    
                 </li>     
                  <li class="right-sidebar-item">  
                     <a tabindex="0" class="right-sidebar-button" [routerLink]="['/']">

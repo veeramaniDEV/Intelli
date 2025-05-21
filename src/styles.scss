@@ -2,3 +2,9 @@
 @use './assets/layout/layout.scss';
 @use 'primeicons/primeicons.css';
 
+.card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+}
+.content_height{
+    min-height: calc(100vh - 143px);
+}
