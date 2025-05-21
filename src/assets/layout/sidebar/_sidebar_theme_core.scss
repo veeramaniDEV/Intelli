@@ -25,7 +25,8 @@
         li {
             &.active-menuitem {
                 > a {
-                    color: var(--d-menuitem-active-text-color);
+                    // color: var(--d-menuitem-active-text-color);
+                    color: #ea580c;
                 }
             }
 
@@ -33,7 +34,9 @@
                 color: var(--d-menuitem-text-color);
 
                 &:hover {
-                    background: var(--d-menuitem-hover-bg);
+                    // background: var(--d-menuitem-hover-bg);
+                    background: #f9c38247;
+                    color: #f1864c;
                 }
             }
         }
@@ -46,7 +49,8 @@
             > ul {
                 z-index: 1;
                 > li.active-menuitem {
-                    background: var(--d-menuitem-active-bg);
+                    // background: var(--d-menuitem-active-bg);
+                    background: #ffe4c3;
                 }
             }
         }

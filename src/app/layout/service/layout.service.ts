@@ -39,7 +39,7 @@ export class LayoutService {
         surface: null,
         darkTheme: false,
         menuMode: 'static',
-        menuTheme: 'primary',
+        menuTheme: 'light',
         cardStyle: 'transparent'
     };
 

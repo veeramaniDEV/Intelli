@@ -16,15 +16,18 @@ import { AppSidebar } from './app.sidebar';
     standalone: true,
     imports: [CommonModule, AppTopbar, AppSidebar, RouterModule, AppConfigurator, AppBreadcrumb, AppFooter, AppSearch, AppRightMenu],
     template: `<div class="layout-wrapper" [ngClass]="containerClass()">
-        <div app-sidebar></div>
+       
+        <div app-topbar class="bg-orange-600"></div>
         <div class="layout-content-wrapper">
             <div class="layout-content-wrapper-inside">
-                <div app-topbar></div>
+                 <div app-sidebar></div>
                 <div class="layout-content">
                     <div app-breadcrumb></div>
+                    <div class="content_height">
                     <router-outlet></router-outlet>
+                    </div>
+                    <div app-footer></div>
                 </div>
-                <div app-footer></div>
             </div>
         </div>
         <app-configurator />
