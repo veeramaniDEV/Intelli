@@ -10,12 +10,12 @@ import { AppTopbar } from './app.topbar';
     standalone: true,
     imports: [CommonModule, AppMenu, RouterModule, AppTopbar],
     template: `<div class="layout-sidebar" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
-        <div class="sidebar-header">
+        <!-- <div class="sidebar-header">
             <a class="logo" [routerLink]="['/']">
                  <img src="assets/images/logo-intelli.png" class="w-56 bg-white rounded-lg"/>
             </a>
             <button class="layout-sidebar-anchor z-2" type="button" (click)="anchor()"></button>
-        </div>
+        </div> -->
 
         <div #menuContainer class="layout-menu-container">
             <div app-menu></div>

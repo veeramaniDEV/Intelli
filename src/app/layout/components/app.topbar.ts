@@ -25,20 +25,24 @@ interface NotificationsBars {
     imports: [RouterModule, CommonModule, StyleClassModule, AppBreadcrumb, InputTextModule, ButtonModule, IconFieldModule, InputIconModule, RippleModule, BadgeModule, OverlayBadgeModule, AvatarModule],
     template: `<div class="layout-topbar">
         <div class="topbar-left">
-            <a tabindex="0" #menubutton type="button" class="menu-button" (click)="onMenuButtonClick()">
-                <i class="pi pi-chevron-left"></i>
+             <a tabindex="0" #menubutton type="button" class="menu-button" (click)="onMenuButtonClick()">
+                <i class="pi pi-chevron-left text-white"></i>
             </a>
-            <img class="horizontal-logo" src="/layout/images/logo-white.svg" alt="diamond-layout" />
             <span class="topbar-separator"></span>
+            <a class="logo" [routerLink]="['/']">
+                 <img src="assets/images/logo_white.png" class="w-60"/>
+            </a>
+           
+            <!-- <img class="horizontal-logo" src="assets/images/logo-intelli.png" alt="diamond-layout" /> -->
             <div app-breadcrumb></div>
-            <img class="mobile-logo" src="/layout/images/logo-{{ isDarkTheme() ? 'white' : 'dark' }}.svg" alt="diamond-layout" />
+            <!-- <img class="mobile-logo" src="/layout/images/logo-{{ isDarkTheme() ? 'white' : 'dark' }}.svg" alt="diamond-layout" /> -->
         </div>
 
         <div class="topbar-right">
             <ul class="topbar-menu">
                 <li class="right-sidebar-item">
                     <a class="right-sidebar-button" (click)="toggleSearchBar()">
-                        <i class="pi pi-search"></i>
+                        <i class="pi pi-search text-white"></i>
                     </a>
                 </li>
                 <!-- <li class="right-sidebar-item">
@@ -46,14 +50,14 @@ interface NotificationsBars {
                 </li> -->
                  <li class="right-sidebar-item">  
                    <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
-                        <span class="w-2 h-2 rounded-full bg-red-500 absolute top-2 right-2.5"></span>
-                         <i class="pi pi-clock"></i>
+                        <span class="w-3 h-3 rounded-full  absolute top-1.5 right-2 " style="background-color:#8b0000;"></span>
+                         <i class="pi pi-clock text-white"></i>
                     </a>
                 </li>
                 <li class="right-sidebar-item static sm:relative">
                     <a class="right-sidebar-button relative z-50" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveActiveClass="animate-fadeout" leaveToClass="hidden" [hideOnOutsideClick]="true">
-                        <span class="w-2 h-2 rounded-full bg-red-500 absolute top-2 right-2.5"></span>
-                        <i class="pi pi-bell"></i>
+                        <span class="w-3 h-3 rounded-full  absolute top-1.5 right-2" style="background-color:#8b0000;"></span>
+                        <i class="pi pi-bell text-white"></i>
                     </a>
                     <div
                         class="list-none m-0 rounded-2xl border border-surface absolute bg-surface-0 dark:bg-surface-900 overflow-hidden hidden origin-top min-w-72 sm:w-[22rem] mt-2 z-50 top-auto shadow-[0px_56px_16px_0px_rgba(0,0,0,0.00),0px_36px_14px_0px_rgba(0,0,0,0.01),0px_20px_12px_0px_rgba(0,0,0,0.02),0px_9px_9px_0px_rgba(0,0,0,0.03),0px_2px_5px_0px_rgba(0,0,0,0.04)]"
@@ -101,7 +105,7 @@ interface NotificationsBars {
                 </li>     
                  <li class="right-sidebar-item">  
                     <a tabindex="0" class="right-sidebar-button" [routerLink]="['/']">
-                       <i class="pi pi-sign-out" style="color: var(--primary-color)"></i>
+                       <i class="pi pi-sign-out text-white" ></i>
                     </a>
                 </li>
             </ul>

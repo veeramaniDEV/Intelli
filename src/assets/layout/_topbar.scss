@@ -2,7 +2,7 @@
     padding: 0.75rem 0.5rem;
     border-bottom: 1px solid var(--surface-border);
     position: static;
-    width: calc(100% - 4rem);
+    // width: calc(100% - 4rem);
     margin: 0 auto;
     z-index: 999;
     display: flex;
@@ -37,7 +37,7 @@
         outline: 0 none;
 
         &:hover {
-            background: var(--surface-hover);
+            background: #fc9400;
         }
 
         &:focus {
@@ -74,7 +74,7 @@
         display: flex;
         align-items: center;
 
-        > li {
+        >li {
             margin-left: 1rem;
             position: relative;
 
@@ -83,7 +83,7 @@
             }
 
             &.profile-item {
-                > a {
+                >a {
                     width: auto;
                     height: auto;
                     display: flex;
@@ -98,7 +98,7 @@
                 }
             }
 
-            > a {
+            >a {
                 width: 2.5rem;
                 height: 2.5rem;
                 line-height: 2.5rem;
@@ -116,7 +116,8 @@
                 outline: 0 none;
 
                 &:hover {
-                    background: var(--surface-hover);
+                    // background: var(--surface-hover);
+                    background: #fc9400;
                 }
 
                 &:focus {

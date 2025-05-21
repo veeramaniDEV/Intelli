@@ -24,217 +24,40 @@ export class AppMenu {
                     routerLink: ['/dashboard']
                 },
                 {
-                    label: 'Submissions',
+                    label: 'Quote Management',
                     icon: 'pi pi-fw pi-building-columns',
                     routerLink: ['/submissions']
                 },
                 {
-                    label: 'Commision',
+                    label: 'Agency Management',
+                    icon: 'pi pi-fw pi-gauge',
+                    routerLink: ['/dashboard-marketing']
+                },
+                {
+                    label: 'Client Management',
+                    icon: 'pi pi-fw pi-gauge',
+                    routerLink: ['/dashboard-marketing']
+                },
+                {
+                    label: 'Claims Administration',
+                    icon: 'pi pi-fw pi-gauge',
+                    routerLink: ['/dashboard-marketing']
+                },
+                {
+                    label: 'Financial Analysis',
                     icon: 'pi pi-fw pi-gauge',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Reports',
-                    icon: 'pi pi-fw pi-comment',
-                    items: [
-                        {
-                            label: 'Piplline Summary Report',
-                            icon: 'pi pi-fw pi-image',
-                            routerLink: ['/apps/blog/list']
-                        }
-                    ]
+                    icon: 'pi pi-fw pi-gauge',
+                    routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Settings',
-                    icon: 'pi pi-fw pi-align-left',
-                    items: [
-                        {
-                            label: 'User Details',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'Add / View Details',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Role Types',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'SUTA',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'SUTA Wagebase',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'SUTA Rates',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'SUTA Company',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'FICA and FUTA',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'FICA and FUTA Master',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'FUTA Rate',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'FICA Limit',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'FUTA Limit',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'WC',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'WC Taxes By State',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'WC Carrier',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'WC Rates',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'WC Description',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'WC Agency',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'Admin Fee',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'Admin Fee Master',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Admin Fee Tier Master',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                            ]
-                        },
-                        {
-                            label: 'Check List',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'Add / View CheckList',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Add General Info',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'File',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'File Category',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'File Type',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'SIC and NAICS',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'SIC Code',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'NAICS Code',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        },
-                        {
-                            label: 'Others',
-                            icon: 'pi pi-fw pi-align-left',
-                            items: [
-                                {
-                                    label: 'Corporation Type',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Coverage',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'EPLI',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Health Carrier',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Morbidity Factor',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Outsourcing Vendor',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'POA Master',
-                                    icon: 'pi pi-fw pi-align-left'
-                                },
-                                {
-                                    label: 'Mail Settings',
-                                    icon: 'pi pi-fw pi-align-left'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    label: 'Admin',
-                    icon: 'pi pi-fw pi-comment',
-                    items: [
-                        {
-                            label: ' Logout',
-                            icon: 'pi pi-fw pi-image',
-                            routerLink: ['/apps/blog/list']
-                        }
-                    ]
-                },
+                    icon: 'pi pi-cog',
+                    routerLink: ['/dashboard-marketing']
+                }
             ]
         }
 
