@@ -30,7 +30,7 @@ interface NotificationsBars {
             </a>
             <span class="topbar-separator"></span>
             <a class="logo" [routerLink]="['/']">
-                 <img src="assets/images/logo_white.png" class="w-60"/>
+                 <img src="assets/images/logo_white.png" class="w-56"/>
             </a>
            
             <!-- <img class="horizontal-logo" src="assets/images/logo-intelli.png" alt="diamond-layout" /> -->
