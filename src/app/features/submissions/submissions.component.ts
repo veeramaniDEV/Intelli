@@ -20,29 +20,122 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 
 @Component({
   selector: 'app-submissions',
-  imports: [TabsModule, ButtonModule,TableModule,
-        MultiSelectModule,
-        SelectModule,
-        InputIconModule,
-        TagModule,
-        InputTextModule,
-        SliderModule,
-        ProgressBarModule,
-        ToggleButtonModule,
-        ToastModule,
-        CommonModule,
-        FormsModule,
-        RatingModule,
-        RippleModule,
-        IconFieldModule],
+  imports: [TabsModule, ButtonModule, TableModule,
+    MultiSelectModule,
+    SelectModule,
+    InputIconModule,
+    TagModule,
+    InputTextModule,
+    SliderModule,
+    ProgressBarModule,
+    ToggleButtonModule,
+    ToastModule,
+    CommonModule,
+    FormsModule,
+    RatingModule,
+    RippleModule,
+    IconFieldModule],
   templateUrl: './submissions.component.html',
   styleUrl: './submissions.component.scss'
 })
 export class SubmissionsComponent {
-  constructor( private router: Router) { }
+  constructor(private router: Router) { }
   addSubmissions() {
-    
-      this.router.navigate(['/addsubmission']);
-    
+
+    this.router.navigate(['/addsubmission']);
+
   }
+  customers = [
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'GEQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'REQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    },
+    {
+      id: 1,
+      reqId: 'GEQ-00001',
+      title: 'Migration Projects',
+      by: 'Chitralekha',
+      team: 'Insource Benefits OPS',
+      priority: 'High',
+      status: 'Approved',
+      projectstatus: 'Approved',
+      createdOn: '2/21/2025 6:03 PM'
+    }
+    
+  ];
+
+  selectedCustomers: any[] = [];
 }
