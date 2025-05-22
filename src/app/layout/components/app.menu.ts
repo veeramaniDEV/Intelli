@@ -25,32 +25,32 @@ export class AppMenu {
                 },
                 {
                     label: 'Quote Management',
-                    icon: 'pi pi-fw pi-building-columns',
+                    icon: 'pi pi-money-bill',
                     routerLink: ['/submissions']
                 },
                 {
                     label: 'Agency Management',
-                    icon: 'pi pi-fw pi-gauge',
+                    icon: 'pi pi-users',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Client Management',
-                    icon: 'pi pi-fw pi-gauge',
+                    icon: 'pi pi-user',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Claims Administration',
-                    icon: 'pi pi-fw pi-gauge',
+                    icon: 'pi pi-file-check',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Financial Analysis',
-                    icon: 'pi pi-fw pi-gauge',
+                    icon: 'pi pi-dollar',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
                     label: 'Reports',
-                    icon: 'pi pi-fw pi-gauge',
+                    icon: 'pi pi-file',
                     routerLink: ['/dashboard-marketing']
                 },
                 {
