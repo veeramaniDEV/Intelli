@@ -39,7 +39,9 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
   styleUrl: './submissions.component.scss'
 })
 export class SubmissionsComponent {
+  dt: any;
   constructor(private router: Router) { }
+  
   addSubmissions() {
 
     this.router.navigate(['/addsubmission']);
@@ -48,93 +50,75 @@ export class SubmissionsComponent {
   customers = [
     {
       id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
+      reqId: 'Midwest Skiing Company, LLC',
+      title: 'WI',
+      by: '$456,928.06',
+      team: '$0.00',
+      priority: '05/22/2025',
+      status: 'Ralph Mencia',
+      projectstatus: 'Work Comp Now1',
+      projectstatus2: '05/22/2025',
+      projectstatus3: 'Naveen Sukumaran',
+      projectstatus4: 'Application Initiated',
+      projectstatus5: 'Setup in Progress',
     },
     {
       id: 1,
-      reqId: 'GEQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
+      reqId: 'Midwest Skiing Company, LLC',
+      title: 'WI',
+      by: '$456,928.06',
+      team: '$0.00',
+      priority: '05/22/2025',
+      status: 'Ralph Mencia',
+      projectstatus: 'Work Comp Now1',
+      projectstatus2: '05/22/2025',
+      projectstatus3: 'Naveen Sukumaran',
+      projectstatus4: 'Application Initiated',
+      projectstatus5: 'Setup in Progress',
     },
     {
       id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
+      reqId: 'Midwest Skiing Company, LLC',
+      title: 'WI',
+      by: '$456,928.06',
+      team: '$0.00',
+      priority: '05/22/2025',
+      status: 'Ralph Mencia',
+      projectstatus: 'Work Comp Now1',
+      projectstatus2: '05/22/2025',
+      projectstatus3: 'Naveen Sukumaran',
+      projectstatus4: 'Application Initiated',
+      projectstatus5: 'Setup in Progress',
     },
     {
       id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
+      reqId: 'Midwest Skiing Company, LLC',
+      title: 'WI',
+      by: '$456,928.06',
+      team: '$0.00',
+      priority: '05/22/2025',
+      status: 'Ralph Mencia',
+      projectstatus: 'Work Comp Now1',
+      projectstatus2: '05/22/2025',
+      projectstatus3: 'Naveen Sukumaran',
+      projectstatus4: 'Application Initiated',
+      projectstatus5: 'Setup in Progress',
     },
     {
       id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
-    },
-    {
-      id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
-    },
-    {
-      id: 1,
-      reqId: 'REQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
-    },
-    {
-      id: 1,
-      reqId: 'GEQ-00001',
-      title: 'Migration Projects',
-      by: 'Chitralekha',
-      team: 'Insource Benefits OPS',
-      priority: 'High',
-      status: 'Approved',
-      projectstatus: 'Approved',
-      createdOn: '2/21/2025 6:03 PM'
+      reqId: 'Midwest Skiing Company, LLC',
+      title: 'WI',
+      by: '$456,928.06',
+      team: '$0.00',
+      priority: '05/22/2025',
+      status: 'Ralph Mencia',
+      projectstatus: 'Work Comp Now1',
+      projectstatus2: '05/22/2025',
+      projectstatus3: 'Naveen Sukumaran',
+      projectstatus4: 'Application Initiated',
+      projectstatus5: 'Setup in Progress',
     }
-    
+
   ];
 
   selectedCustomers: any[] = [];
