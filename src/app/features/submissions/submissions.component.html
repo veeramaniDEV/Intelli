@@ -27,21 +27,24 @@
     </ng-template>
     <ng-template #header>
       <tr>
-        <th> <p-tableCheckbox></p-tableCheckbox></th>
-        <th pSortableColumn="title">Requisition Id <p-sortIcon field="title" /></th>
-        <th>Project Title</th>
-        <th>Requisition By</th>
-        <th>Team Name</th>
-        <th>Priority</th>
-        <th>Requisition Status</th>
-        <th>Project Status</th>
-        <th>Created On</th>
+        <th>Edit</th>
+        <th pSortableColumn="code">Name of Business <p-sortIcon field="code" /> <p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">State <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Annual Payroll <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">WC Premium <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Created  Date <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Sales Rep <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Lead Generator <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Last Modified Date <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Modified By <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Lead Status <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
+        <th pSortableColumn="code">Activity Status <p-sortIcon field="code" /><p-columnFilter type="text" field="name" display="menu" /></th>
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-customer>
       <tr [pSelectableRow]="customer" class="text-gray-800">
         <td>
-          <p-tableCheckbox [value]="customer"></p-tableCheckbox>
+            <i class="pi pi-pencil"></i>
         </td>
         <td class="py-2 px-4">{{ customer.reqId }}</td>
         <td class="py-2 px-4">{{ customer.title }}</td>
@@ -50,7 +53,10 @@
         <td class="py-2 px-4">{{ customer.priority }}</td>
         <td class="py-2 px-4">{{ customer.status }}</td>
         <td class="py-2 px-4">{{ customer.projectstatus }}</td>
-        <td class="py-2 px-4">{{ customer.createdOn }}</td>
+        <td class="py-2 px-4">{{ customer.projectstatus2 }}</td>
+        <td class="py-2 px-4">{{ customer.projectstatus3 }}</td>
+        <td class="py-2 px-4">{{ customer.projectstatus4 }}</td>
+        <td class="py-2 px-4">{{ customer.projectstatus5 }}</td>
       </tr>
     </ng-template>
     <ng-template #emptymessage>
